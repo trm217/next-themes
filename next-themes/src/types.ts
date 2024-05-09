@@ -43,5 +43,5 @@ export interface ThemeProviderProps extends React.PropsWithChildren {
   /** Nonce string to pass to the inline script for CSP headers */
   nonce?: string | undefined
   /** Define where the users theme value is stored. Defaults to 'localStorage' */
-  storage?: 'localStorage' | 'sessionStorage' | undefined
+  storage?: 'localStorage' | 'sessionStorage' | 'cookie' | undefined
 }
