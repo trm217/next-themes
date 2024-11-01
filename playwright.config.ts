@@ -6,10 +6,10 @@ const config: PlaywrightTestConfig = {
   reporter: process.env.CI ? 'github' : 'list',
   testDir: './test',
   webServer: {
-    command: 'pnpm start --filter=example...',
+    command: 'pnpm run start --filter=example...',
     port: 3000,
     reuseExistingServer: !process.env.CI,
-    timeout: 120 * 1000
+    timeout: 30 * 1000
   },
   use: {
     trace: 'on-first-retry',
